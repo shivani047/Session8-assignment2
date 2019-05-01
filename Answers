@@ -1,0 +1,45 @@
+> summary(RcmdrTestDrive)
+     order             smoking       gender            race        before     
+ Min.   :  1.00   Nonsmoker:136   Female:70   AfricanAmer:46   Min.   :71.30  
+ 1st Qu.: 42.75   Smoker   : 32   Male  :98   Asian      :13   1st Qu.:73.10  
+ Median : 84.50                               Caucasian  :73   Median :73.90  
+ Mean   : 84.50                               Hispanic   :34   Mean   :73.97  
+ 3rd Qu.:126.25                               Other      : 2   3rd Qu.:74.80  
+ Max.   :168.00                                                Max.   :76.30  
+     after           salary         reduction          parking     
+ Min.   :66.60   Min.   : 377.2   Min.   :   3.00   Min.   :1.000  
+ 1st Qu.:72.50   1st Qu.: 621.1   1st Qu.:  78.75   1st Qu.:1.000  
+ Median :73.70   Median : 710.1   Median : 139.50   Median :1.000  
+ Mean   :73.27   Mean   : 724.5   Mean   : 223.63   Mean   :1.952  
+ 3rd Qu.:74.60   3rd Qu.: 808.6   3rd Qu.: 335.50   3rd Qu.:2.000  
+ Max.   :76.40   Max.   :1156.2   Max.   :1632.00   Max.   :8.000  
+
+> describe(RcmdrTestDrive)
+          vars   n   mean     sd median trimmed    mad    min     max   range  skew
+order        1 168  84.50  48.64  84.50   84.50  62.27   1.00  168.00  167.00  0.00
+smoking*     2 168   1.19   0.39   1.00    1.12   0.00   1.00    2.00    1.00  1.56
+gender*      3 168   1.58   0.49   2.00    1.60   0.00   1.00    2.00    1.00 -0.34
+race*        4 168   2.60   1.13   3.00    2.61   1.48   1.00    5.00    4.00 -0.28
+before       5 168  73.97   1.08  73.90   73.98   1.19  71.30   76.30    5.00 -0.04
+after        6 168  73.27   1.88  73.70   73.48   1.56  66.60   76.40    9.80 -1.16
+salary       7 168 724.52 148.86 710.15  715.53 134.60 377.17 1156.16  778.99  0.51
+reduction    8 168 223.63 213.06 139.50  194.43 136.40   3.00 1632.00 1629.00  2.29
+parking      9 168   1.95   1.32   1.00    1.71   0.00   1.00    8.00    7.00  1.67
+          kurtosis    se
+order        -1.22  3.75
+smoking*      0.44  0.03
+gender*      -1.90  0.04
+race*        -1.15  0.09
+before       -0.80  0.08
+after         1.32  0.15
+salary        0.20 11.49
+reduction    10.02 16.44
+parking       2.82  0.10
+
+a.  Compute the measures of central tendency for salary and reduction which
+variable has highest center?
+
+As we can see from the histogram of salary and reduction -  salary has highest center
+
+b. Which measure of center is more appropriate for before and after?
+as we can see before and after has almost same mean and median so mode is more appropriate for before and after.
